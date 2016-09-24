@@ -1,0 +1,2652 @@
+1
+00:00:00,000 --> 00:00:03,114
+
+
+2
+00:00:03,114 --> 00:00:04,529
+FRANCESCO NERIERI:
+Good afternoon.
+
+3
+00:00:04,530 --> 00:00:06,098
+Welcome to Firebase
+Notifications.
+
+4
+00:00:06,098 --> 00:00:06,994
+[BANG]
+
+5
+00:00:06,994 --> 00:00:11,046
+[LAUGHTER]
+
+6
+00:00:11,046 --> 00:00:12,860
+
+
+7
+00:00:12,860 --> 00:00:14,660
+In this session, I'm
+Francesco and I'm
+
+8
+00:00:14,660 --> 00:00:17,930
+going to introduce why we
+believe that notifications
+
+9
+00:00:17,930 --> 00:00:20,670
+are important.
+
+10
+00:00:20,670 --> 00:00:22,870
+Later on, Ting Mui,
+our product manager,
+
+11
+00:00:22,870 --> 00:00:25,060
+will come onstage
+and introduce what
+
+12
+00:00:25,060 --> 00:00:27,410
+we have built so you can use
+Notifications effectively.
+
+13
+00:00:27,410 --> 00:00:30,000
+
+
+14
+00:00:30,000 --> 00:00:33,640
+And finally, Laurence,
+our launch and T-shirt guy
+
+15
+00:00:33,640 --> 00:00:36,330
+and developer
+advocate, will show you
+
+16
+00:00:36,330 --> 00:00:38,412
+this product with a few demos.
+
+17
+00:00:38,412 --> 00:00:40,960
+
+
+18
+00:00:40,960 --> 00:00:42,210
+So let's begin.
+
+19
+00:00:42,210 --> 00:00:44,990
+Why Notifications?
+
+20
+00:00:44,990 --> 00:00:47,790
+When we embark in the journey
+of developing an application,
+
+21
+00:00:47,790 --> 00:00:50,400
+we all dream about its success.
+
+22
+00:00:50,400 --> 00:00:53,030
+We think about
+how much our users
+
+23
+00:00:53,030 --> 00:00:55,260
+will love our applications.
+
+24
+00:00:55,260 --> 00:00:57,730
+We want them to come
+to the [INAUDIBLE]
+
+25
+00:00:57,730 --> 00:00:59,680
+and want more and more.
+
+26
+00:00:59,680 --> 00:01:03,490
+Because user engagement
+plays a really big role
+
+27
+00:01:03,490 --> 00:01:06,400
+in application development.
+
+28
+00:01:06,400 --> 00:01:08,270
+And notifications
+are those messages
+
+29
+00:01:08,270 --> 00:01:11,660
+that pop in front of a user
+to grab their attention.
+
+30
+00:01:11,660 --> 00:01:15,039
+And hopefully, they make them
+do something that we want to.
+
+31
+00:01:15,040 --> 00:01:17,550
+A month ago, I bought
+a ticket to a festival.
+
+32
+00:01:17,550 --> 00:01:19,050
+And this application
+is reminding me
+
+33
+00:01:19,050 --> 00:01:22,440
+that, in three days,
+the festival begins.
+
+34
+00:01:22,440 --> 00:01:24,350
+And maybe I should
+come back to the app
+
+35
+00:01:24,350 --> 00:01:28,800
+and check the final lineup,
+or buy tickets for a shuttle,
+
+36
+00:01:28,800 --> 00:01:33,500
+or schedule the concerts and
+share them with my friends.
+
+37
+00:01:33,500 --> 00:01:36,130
+So notifications are really
+powerful in getting the users
+
+38
+00:01:36,130 --> 00:01:38,380
+back into our application.
+
+39
+00:01:38,380 --> 00:01:41,539
+In fact, there are studies that
+show that users that opt-in
+
+40
+00:01:41,540 --> 00:01:45,340
+to notifications are twice
+as likely to come back,
+
+41
+00:01:45,340 --> 00:01:48,880
+as opposed to those that don't.
+
+42
+00:01:48,880 --> 00:01:51,479
+But if we send too
+many notifications,
+
+43
+00:01:51,480 --> 00:01:52,990
+we might upset the user.
+
+44
+00:01:52,990 --> 00:01:56,600
+We overwhelm them, and we
+achieve the opposite effect.
+
+45
+00:01:56,600 --> 00:01:59,990
+Users might silence the
+notifications, or even worse,
+
+46
+00:01:59,990 --> 00:02:02,300
+uninstall our app.
+
+47
+00:02:02,300 --> 00:02:04,310
+So we need to get
+a few things right.
+
+48
+00:02:04,310 --> 00:02:06,840
+We need to know when
+is the right time
+
+49
+00:02:06,840 --> 00:02:08,990
+to send the notifications.
+
+50
+00:02:08,990 --> 00:02:12,100
+If I get a notification
+now to come back to a game
+
+51
+00:02:12,100 --> 00:02:15,750
+and play a new level, it's
+probably not as effective.
+
+52
+00:02:15,750 --> 00:02:18,990
+We need to understand
+who we should target.
+
+53
+00:02:18,990 --> 00:02:22,140
+If we have a wetsuit sale,
+and we target runners,
+
+54
+00:02:22,140 --> 00:02:26,320
+maybe we are not as effective
+as if we target surfers.
+
+55
+00:02:26,320 --> 00:02:28,452
+And finally, what
+is the message?
+
+56
+00:02:28,452 --> 00:02:30,160
+What we are trying to
+convey to the user?
+
+57
+00:02:30,160 --> 00:02:32,460
+Because if we get
+these things right,
+
+58
+00:02:32,460 --> 00:02:34,610
+there is when we grab
+the user attention,
+
+59
+00:02:34,610 --> 00:02:37,650
+and we get them to
+do what we need.
+
+60
+00:02:37,650 --> 00:02:41,450
+If we write an application
+and we slip in a bug--
+
+61
+00:02:41,450 --> 00:02:43,410
+I know bugs happen, right?
+
+62
+00:02:43,410 --> 00:02:47,090
+We definitely have bugs
+in our applications.
+
+63
+00:02:47,090 --> 00:02:49,700
+Not Laurence,
+obviously, not Laurence.
+
+64
+00:02:49,700 --> 00:02:52,429
+Well, we want to target
+just the population that
+
+65
+00:02:52,430 --> 00:02:53,805
+was affected by the bug.
+
+66
+00:02:53,805 --> 00:02:56,180
+We don't want to send an
+apology to the entire population
+
+67
+00:02:56,180 --> 00:02:56,880
+of our users.
+
+68
+00:02:56,880 --> 00:03:00,320
+
+
+69
+00:03:00,320 --> 00:03:03,019
+So notifications are
+really important.
+
+70
+00:03:03,020 --> 00:03:05,810
+But to get these things right,
+we need some sort of feedback.
+
+71
+00:03:05,810 --> 00:03:08,490
+And here is when
+analytics come to help.
+
+72
+00:03:08,490 --> 00:03:10,310
+Because with good
+analytics data,
+
+73
+00:03:10,310 --> 00:03:13,160
+now we can improve our
+engagement strategies.
+
+74
+00:03:13,160 --> 00:03:16,359
+And our marketing and
+growth [INAUDIBLE]
+
+75
+00:03:16,360 --> 00:03:19,265
+people, they can spend
+time in focusing on how
+
+76
+00:03:19,265 --> 00:03:20,989
+to increase our user base.
+
+77
+00:03:20,990 --> 00:03:24,040
+And our content editor
+can send content updates
+
+78
+00:03:24,040 --> 00:03:25,390
+as they write their articles.
+
+79
+00:03:25,390 --> 00:03:27,429
+And our product
+managers, like Ting Mui
+
+80
+00:03:27,430 --> 00:03:29,920
+here, they're super happy
+they can send announcements
+
+81
+00:03:29,920 --> 00:03:32,320
+about new features that would
+make the usage of the app
+
+82
+00:03:32,320 --> 00:03:33,212
+even more compelling.
+
+83
+00:03:33,212 --> 00:03:36,339
+
+
+84
+00:03:36,340 --> 00:03:38,680
+So we think that this is very
+important to get it right.
+
+85
+00:03:38,680 --> 00:03:41,710
+And here at Firebase, we
+brought a new product that
+
+86
+00:03:41,710 --> 00:03:43,912
+will let you do exactly this.
+
+87
+00:03:43,912 --> 00:03:46,370
+Please welcome Ting Mui to show
+you Firebase Notifications.
+
+88
+00:03:46,370 --> 00:03:49,188
+
+
+89
+00:03:49,188 --> 00:03:52,596
+[APPLAUSE]
+
+90
+00:03:52,597 --> 00:03:54,070
+
+
+91
+00:03:54,070 --> 00:03:56,750
+TING MUI LI: Thank
+you, Francesco.
+
+92
+00:03:56,750 --> 00:04:01,440
+So let's take a look at
+Firebase Notifications.
+
+93
+00:04:01,440 --> 00:04:05,820
+It is part of the
+Firebase product.
+
+94
+00:04:05,820 --> 00:04:08,910
+And Firebase is a suite
+of integrated products
+
+95
+00:04:08,910 --> 00:04:13,160
+that helps you to develop
+your apps, grow a user base,
+
+96
+00:04:13,160 --> 00:04:13,976
+and earn money.
+
+97
+00:04:13,976 --> 00:04:17,200
+
+
+98
+00:04:17,200 --> 00:04:19,810
+Francesco just mentioned
+that a notification
+
+99
+00:04:19,810 --> 00:04:23,040
+is really important in
+helping you to engage users.
+
+100
+00:04:23,040 --> 00:04:26,230
+With the right contacts
+and the right analytics,
+
+101
+00:04:26,230 --> 00:04:28,430
+it could be even more powerful.
+
+102
+00:04:28,430 --> 00:04:31,060
+But the process
+has to be simple,
+
+103
+00:04:31,060 --> 00:04:33,330
+so that people can
+really focus on getting
+
+104
+00:04:33,330 --> 00:04:35,070
+the content of the message.
+
+105
+00:04:35,070 --> 00:04:36,599
+Sending an
+interesting message is
+
+106
+00:04:36,600 --> 00:04:40,320
+going to bring your user
+back much more effectively.
+
+107
+00:04:40,320 --> 00:04:42,520
+So let's see how
+Firebase Notification is
+
+108
+00:04:42,520 --> 00:04:44,000
+going to help you achieve that.
+
+109
+00:04:44,000 --> 00:04:47,190
+
+
+110
+00:04:47,190 --> 00:04:50,700
+Many of you are familiar with
+Firebase Cloud Messaging,
+
+111
+00:04:50,700 --> 00:04:53,485
+the new version of
+Google Cloud Messaging.
+
+112
+00:04:53,485 --> 00:04:56,175
+It has been reliably
+delivering messages
+
+113
+00:04:56,175 --> 00:05:00,600
+to Android, iOS,
+and Chrome users.
+
+114
+00:05:00,600 --> 00:05:04,440
+Firebase Notifications is
+built on top of Firebase Cloud
+
+115
+00:05:04,440 --> 00:05:06,000
+Messaging.
+
+116
+00:05:06,000 --> 00:05:07,640
+It is cross-platform.
+
+117
+00:05:07,640 --> 00:05:11,320
+It's designed so that you
+can set the right target
+
+118
+00:05:11,320 --> 00:05:14,310
+with the right contacts
+and be able to evaluate
+
+119
+00:05:14,310 --> 00:05:17,450
+the effectiveness after.
+
+120
+00:05:17,450 --> 00:05:21,190
+It is simple, as you can
+see from this console.
+
+121
+00:05:21,190 --> 00:05:24,350
+Anyone should be able to send
+a notification or a message
+
+122
+00:05:24,350 --> 00:05:28,570
+without having to write a
+single line of server code,
+
+123
+00:05:28,570 --> 00:05:31,380
+so that you can really
+focus on getting the content
+
+124
+00:05:31,380 --> 00:05:34,320
+of your message right.
+
+125
+00:05:34,320 --> 00:05:36,650
+But it is not just
+a form so that you
+
+126
+00:05:36,650 --> 00:05:38,640
+have to fill out all
+the mandatory fields
+
+127
+00:05:38,640 --> 00:05:40,990
+before you can send a message.
+
+128
+00:05:40,990 --> 00:05:44,780
+It's designed so that you
+can set the right target
+
+129
+00:05:44,780 --> 00:05:50,640
+by using analytic insight, FCM
+topics, or even device and ad
+
+130
+00:05:50,640 --> 00:05:53,219
+info.
+
+131
+00:05:53,220 --> 00:05:55,690
+Once you have designed
+your right target,
+
+132
+00:05:55,690 --> 00:05:59,520
+it's about engaging your
+user with the right contacts.
+
+133
+00:05:59,520 --> 00:06:03,150
+For example, use
+language so that you
+
+134
+00:06:03,150 --> 00:06:07,429
+can localize your message,
+so that your Italian users
+
+135
+00:06:07,430 --> 00:06:11,500
+will not be getting a
+German message, for example.
+
+136
+00:06:11,500 --> 00:06:16,980
+Or send your message
+so that it's delivered
+
+137
+00:06:16,980 --> 00:06:19,122
+based off the user's time zone.
+
+138
+00:06:19,122 --> 00:06:21,330
+You don't have to worry
+about waking the user at 3:00
+
+139
+00:06:21,330 --> 00:06:24,940
+AM in the morning, get them
+mad, turn off notifications,
+
+140
+00:06:24,940 --> 00:06:29,330
+and potentially say bye
+to your applications.
+
+141
+00:06:29,330 --> 00:06:32,810
+Every application has
+its own customizations.
+
+142
+00:06:32,810 --> 00:06:38,030
+And you can do that by using
+the Custom data fields.
+
+143
+00:06:38,030 --> 00:06:40,729
+You can pass in a
+dynamic link, so
+
+144
+00:06:40,730 --> 00:06:42,930
+that you can take the
+user to the right contacts
+
+145
+00:06:42,930 --> 00:06:45,265
+and the right flow of your app.
+
+146
+00:06:45,265 --> 00:06:48,070
+Or provide a discount
+code so that you
+
+147
+00:06:48,070 --> 00:06:51,051
+can apply the discount
+when users tap and open
+
+148
+00:06:51,051 --> 00:06:51,842
+your notifications.
+
+149
+00:06:51,842 --> 00:06:54,630
+
+
+150
+00:06:54,630 --> 00:06:58,280
+You've just seen how easy
+it is to send notifications.
+
+151
+00:06:58,280 --> 00:07:00,119
+But is it effective?
+
+152
+00:07:00,120 --> 00:07:02,050
+Is it actually bringing
+more of your users
+
+153
+00:07:02,050 --> 00:07:05,610
+back, not having that much
+of a difference, or actually,
+
+154
+00:07:05,610 --> 00:07:07,860
+turning your user away?
+
+155
+00:07:07,860 --> 00:07:10,120
+Firebase Notification
+is integrated
+
+156
+00:07:10,120 --> 00:07:12,660
+with Firebase Analytics
+and provides you
+
+157
+00:07:12,660 --> 00:07:15,310
+with a default set
+of analytics so
+
+158
+00:07:15,310 --> 00:07:18,515
+that you can understand
+the effectiveness right out
+
+159
+00:07:18,515 --> 00:07:19,015
+of the box.
+
+160
+00:07:19,015 --> 00:07:22,010
+
+
+161
+00:07:22,010 --> 00:07:24,590
+When sending a message,
+a lot of the time,
+
+162
+00:07:24,590 --> 00:07:26,960
+there's a goal that
+we want to achieve.
+
+163
+00:07:26,960 --> 00:07:31,440
+And you can set that by
+using Conversion events.
+
+164
+00:07:31,440 --> 00:07:35,440
+We track Sent and Opened
+for you by default.
+
+165
+00:07:35,440 --> 00:07:39,350
+But obviously, you
+can provide your own.
+
+166
+00:07:39,350 --> 00:07:43,134
+So now, let's go take
+a look at the console
+
+167
+00:07:43,134 --> 00:07:44,800
+and see where you can
+find the analysis.
+
+168
+00:07:44,800 --> 00:07:47,113
+
+
+169
+00:07:47,113 --> 00:07:48,738
+LAURENCE MORONEY:
+Switch to the laptop.
+
+170
+00:07:48,738 --> 00:07:55,092
+
+
+171
+00:07:55,092 --> 00:07:56,050
+TING MUI LI: All right.
+
+172
+00:07:56,050 --> 00:08:01,240
+
+
+173
+00:08:01,240 --> 00:08:05,010
+So what you are seeing here
+is the Firebase Console.
+
+174
+00:08:05,010 --> 00:08:07,980
+And you can find
+Notifications under Growth,
+
+175
+00:08:07,980 --> 00:08:10,360
+because we believe
+that it can really
+
+176
+00:08:10,360 --> 00:08:15,159
+help you to re-engage your users
+to improve their experience.
+
+177
+00:08:15,159 --> 00:08:16,950
+So this is where you
+have all the campaigns
+
+178
+00:08:16,950 --> 00:08:18,890
+that you're managing.
+
+179
+00:08:18,890 --> 00:08:21,240
+If you click on one of the
+campaigns that has already
+
+180
+00:08:21,240 --> 00:08:26,760
+been completed-- it's loading.
+
+181
+00:08:26,760 --> 00:08:28,140
+All right.
+
+182
+00:08:28,140 --> 00:08:30,560
+This is where you're
+going to see the analysis,
+
+183
+00:08:30,560 --> 00:08:33,110
+the notification funnel.
+
+184
+00:08:33,110 --> 00:08:36,799
+So there's some interesting
+data here-- the number of Sent
+
+185
+00:08:36,799 --> 00:08:38,970
+and how many of your
+users actually haven't
+
+186
+00:08:38,970 --> 00:08:41,450
+opened your notifications.
+
+187
+00:08:41,450 --> 00:08:44,420
+So apparently, this
+particular promotion
+
+188
+00:08:44,420 --> 00:08:46,870
+is not as effective
+in getting the user
+
+189
+00:08:46,870 --> 00:08:48,590
+to open the notifications.
+
+190
+00:08:48,590 --> 00:08:50,080
+So we need to do better there.
+
+191
+00:08:50,080 --> 00:08:52,290
+And if you actually
+provide conversion events
+
+192
+00:08:52,290 --> 00:08:54,410
+when you send
+notifications, we will
+
+193
+00:08:54,410 --> 00:08:57,209
+track the number of
+times your user actually
+
+194
+00:08:57,210 --> 00:09:00,201
+clicked the particular actions
+that will lead to that event.
+
+195
+00:09:00,201 --> 00:09:02,850
+
+
+196
+00:09:02,850 --> 00:09:04,450
+So this gives you
+the basic insight
+
+197
+00:09:04,450 --> 00:09:07,440
+of notification effectiveness.
+
+198
+00:09:07,440 --> 00:09:09,310
+If you want to do
+more analysis, this
+
+199
+00:09:09,310 --> 00:09:11,426
+is when you go to Analytics.
+
+200
+00:09:11,427 --> 00:09:13,010
+So there's one trick
+that I would like
+
+201
+00:09:13,010 --> 00:09:16,660
+to share with you here today.
+
+202
+00:09:16,660 --> 00:09:23,170
+So if you go to Analytics and
+look for Notification Opened
+
+203
+00:09:23,170 --> 00:09:28,069
+under the Events tab, this will
+bring you the default Analytic
+
+204
+00:09:28,070 --> 00:09:30,580
+Event Report View.
+
+205
+00:09:30,580 --> 00:09:35,430
+So you'll see the total count,
+the breakdown by messages
+
+206
+00:09:35,430 --> 00:09:38,870
+and topics, as well as
+a breakdown by location
+
+207
+00:09:38,870 --> 00:09:42,295
+and demographic, if those
+data are available to you.
+
+208
+00:09:42,295 --> 00:09:43,670
+The trick that I
+want to show you
+
+209
+00:09:43,670 --> 00:09:50,110
+is if you actually click on
+one of the messages up here,
+
+210
+00:09:50,110 --> 00:09:52,600
+it will actually
+automatically apply filters
+
+211
+00:09:52,600 --> 00:09:56,220
+to all the Dashboards and all
+the Event Reports in Analytics.
+
+212
+00:09:56,220 --> 00:09:58,990
+So now you can really
+do some serious analysis
+
+213
+00:09:58,990 --> 00:10:02,080
+of how this particular
+notification campaign actually
+
+214
+00:10:02,080 --> 00:10:07,120
+impacts your underlying
+success matrix and factors.
+
+215
+00:10:07,120 --> 00:10:09,350
+So now let's go back to
+the presentation, please.
+
+216
+00:10:09,350 --> 00:10:13,780
+
+
+217
+00:10:13,780 --> 00:10:15,589
+All right.
+
+218
+00:10:15,590 --> 00:10:18,090
+So you've just seen the
+product walk-through.
+
+219
+00:10:18,090 --> 00:10:20,680
+So now, Laurence, our
+developer advocate,
+
+220
+00:10:20,680 --> 00:10:22,790
+is going to show us some demos.
+
+221
+00:10:22,790 --> 00:10:23,719
+LAURENCE MORONEY: I don't
+know about you guys,
+
+222
+00:10:23,720 --> 00:10:25,550
+but I'm a really,
+really lazy programmer.
+
+223
+00:10:25,550 --> 00:10:28,359
+So I really like to write as
+few lines of code as possible.
+
+224
+00:10:28,360 --> 00:10:29,200
+But yeah, thank you.
+
+225
+00:10:29,200 --> 00:10:32,010
+So actually, before I
+demo, I get one of these.
+
+226
+00:10:32,010 --> 00:10:33,200
+I got my demo wrong earlier.
+
+227
+00:10:33,200 --> 00:10:33,866
+I was fixing it.
+
+228
+00:10:33,866 --> 00:10:39,319
+So let me see if I can--
+OK, I see people waving.
+
+229
+00:10:39,320 --> 00:10:40,050
+Oh!
+
+230
+00:10:40,050 --> 00:10:40,550
+Short.
+
+231
+00:10:40,550 --> 00:10:42,939
+
+
+232
+00:10:42,940 --> 00:10:45,069
+So I'm a very lazy
+programmer, in general.
+
+233
+00:10:45,069 --> 00:10:47,110
+I like to write as few
+lines of code as possible.
+
+234
+00:10:47,110 --> 00:10:49,724
+I want things to be made as
+easy for me as they can be.
+
+235
+00:10:49,724 --> 00:10:51,890
+And that's one of the things
+that really attracts me
+
+236
+00:10:51,890 --> 00:10:54,080
+to Firebase Notifications,
+because it's just
+
+237
+00:10:54,080 --> 00:10:56,050
+so easy as a developer.
+
+238
+00:10:56,050 --> 00:10:59,010
+And so, first of all, I want
+to talk about two scenarios
+
+239
+00:10:59,010 --> 00:11:00,189
+for building applications.
+
+240
+00:11:00,190 --> 00:11:02,160
+And one is when you're
+receiving notifications
+
+241
+00:11:02,160 --> 00:11:03,124
+in the background.
+
+242
+00:11:03,124 --> 00:11:05,290
+And I want to talk about
+just how easy it is for you
+
+243
+00:11:05,290 --> 00:11:07,300
+to build a code for doing that.
+
+244
+00:11:07,300 --> 00:11:09,459
+So the first one I'm
+going to show is here's
+
+245
+00:11:09,460 --> 00:11:12,425
+the code that you do if you
+want to receive background
+
+246
+00:11:12,425 --> 00:11:14,275
+notifications in iOS.
+
+247
+00:11:14,275 --> 00:11:17,850
+
+
+248
+00:11:17,850 --> 00:11:20,620
+Any other lazy developers here?
+
+249
+00:11:20,620 --> 00:11:22,511
+A single line of
+code, and I mean,
+
+250
+00:11:22,511 --> 00:11:24,260
+technically, it's not
+even a line of code.
+
+251
+00:11:24,260 --> 00:11:26,020
+It's a line of
+configuration, right?
+
+252
+00:11:26,020 --> 00:11:29,120
+You add a single pod to
+your iOS application,
+
+253
+00:11:29,120 --> 00:11:30,746
+and you use the
+Firebase Messaging pod.
+
+254
+00:11:30,746 --> 00:11:32,453
+A lot of people ask,
+well, why messaging?
+
+255
+00:11:32,453 --> 00:11:33,382
+Why not notifications?
+
+256
+00:11:33,382 --> 00:11:35,930
+And you may be familiar
+with Google Cloud Messaging,
+
+257
+00:11:35,930 --> 00:11:38,805
+and now it's new evolution,
+the Firebase Cloud Messaging.
+
+258
+00:11:38,805 --> 00:11:41,055
+They are so similar, and the
+underlying infrastructure
+
+259
+00:11:41,055 --> 00:11:42,530
+is used in the same
+way, that we said,
+
+260
+00:11:42,530 --> 00:11:44,339
+there's no point in shipping
+two sets of libraries,
+
+261
+00:11:44,340 --> 00:11:45,560
+because they're so similar.
+
+262
+00:11:45,560 --> 00:11:48,280
+So if you incorporate the
+Firebase Messaging pod
+
+263
+00:11:48,280 --> 00:11:50,280
+into your iOS application,
+you can also then
+
+264
+00:11:50,280 --> 00:11:52,952
+grow into Firebase
+Cloud Messaging as well.
+
+265
+00:11:52,952 --> 00:11:55,410
+But all you've got to do is
+put this into your application,
+
+266
+00:11:55,410 --> 00:11:56,589
+and you're good to go.
+
+267
+00:11:56,590 --> 00:11:59,250
+And then for Android,
+it's almost as easy.
+
+268
+00:11:59,250 --> 00:12:01,690
+You just build this into
+your build.gradle file.
+
+269
+00:12:01,690 --> 00:12:03,856
+You're going to compile
+com.google.firebase:firebase
+
+270
+00:12:03,856 --> 00:12:05,689
+messaging:3.0.0.
+
+271
+00:12:05,690 --> 00:12:07,200
+And that's it.
+
+272
+00:12:07,200 --> 00:12:09,350
+So if you create
+an application--
+
+273
+00:12:09,350 --> 00:12:11,450
+and I'm going to demo
+in just a moment, where
+
+274
+00:12:11,450 --> 00:12:14,480
+I used Android Studio, and
+I did File, New Application.
+
+275
+00:12:14,480 --> 00:12:16,230
+And if you're an Android
+Studio developer,
+
+276
+00:12:16,230 --> 00:12:18,771
+you're probably familiar with
+the MT activity template, which
+
+277
+00:12:18,771 --> 00:12:20,040
+just gives you a &quot;Hello World.
+
+278
+00:12:20,040 --> 00:12:21,089
+That's all I did.
+
+279
+00:12:21,090 --> 00:12:23,780
+And then I added this
+line to the build.gradle.
+
+280
+00:12:23,780 --> 00:12:24,857
+And let's demo it now.
+
+281
+00:12:24,857 --> 00:12:26,189
+Can we switch to the WolfVision?
+
+282
+00:12:26,190 --> 00:12:30,430
+
+
+283
+00:12:30,430 --> 00:12:32,599
+So I have an app running
+in the background now,
+
+284
+00:12:32,600 --> 00:12:36,303
+and Ting Mui is going to send
+a notification to this app.
+
+285
+00:12:36,303 --> 00:12:36,802
+Yeah.
+
+286
+00:12:36,802 --> 00:12:37,610
+Yeah.
+
+287
+00:12:37,610 --> 00:12:40,060
+TING MUI LI: Can we switch
+to the laptop, please.
+
+288
+00:12:40,060 --> 00:12:42,226
+LAURENCE MORONEY: Yeah,
+sorry, switch to the laptop.
+
+289
+00:12:42,226 --> 00:12:46,625
+
+
+290
+00:12:46,625 --> 00:12:48,610
+TING MUI LI: All right.
+
+291
+00:12:48,610 --> 00:12:49,270
+So let's see.
+
+292
+00:12:49,270 --> 00:12:53,290
+Let's start sending
+a notification.
+
+293
+00:12:53,290 --> 00:12:55,129
+What shall I send?
+
+294
+00:12:55,129 --> 00:12:56,670
+LAURENCE MORONEY:
+What should we say?
+
+295
+00:12:56,670 --> 00:12:58,920
+What kind of notification,
+just so you know it's real.
+
+296
+00:12:58,920 --> 00:13:00,222
+Any hockey fans here?
+
+297
+00:13:00,222 --> 00:13:01,470
+AUDIENCE: Right here.
+
+298
+00:13:01,470 --> 00:13:02,885
+LAURENCE MORONEY: Who's
+going to win the Stanley Cup?
+
+299
+00:13:02,885 --> 00:13:03,900
+AUDIENCE: The Penguins.
+
+300
+00:13:03,900 --> 00:13:04,370
+LAURENCE MORONEY: Penguins?
+
+301
+00:13:04,370 --> 00:13:04,870
+Oh, wow.
+
+302
+00:13:04,870 --> 00:13:05,574
+OK.
+
+303
+00:13:05,574 --> 00:13:06,990
+Who said the Seattle
+Thunderbirds?
+
+304
+00:13:06,990 --> 00:13:07,930
+You're my hero.
+
+305
+00:13:07,930 --> 00:13:10,630
+They're not even in it.
+
+306
+00:13:10,630 --> 00:13:13,000
+OK, let's send Penguins.
+
+307
+00:13:13,000 --> 00:13:13,735
+Oops, sorry.
+
+308
+00:13:13,735 --> 00:13:14,651
+TING MUI LI: Penguins.
+
+309
+00:13:14,651 --> 00:13:17,829
+
+
+310
+00:13:17,830 --> 00:13:18,330
+All right.
+
+311
+00:13:18,330 --> 00:13:24,190
+
+
+312
+00:13:24,190 --> 00:13:27,240
+LAURENCE MORONEY:
+Easier this way.
+
+313
+00:13:27,240 --> 00:13:30,010
+All right, so can we
+switch back to the phone?
+
+314
+00:13:30,010 --> 00:13:31,922
+So now earlier, you
+saw the phone was just
+
+315
+00:13:31,922 --> 00:13:32,880
+sitting on the desktop.
+
+316
+00:13:32,880 --> 00:13:34,463
+And the notification
+has just come in.
+
+317
+00:13:34,463 --> 00:13:36,520
+You can see it up in
+my notification tray.
+
+318
+00:13:36,520 --> 00:13:38,780
+So now if I slide
+down from that,
+
+319
+00:13:38,780 --> 00:13:41,581
+my application was just called
+Firebase Notification 1.
+
+320
+00:13:41,581 --> 00:13:43,330
+And you can see Ting
+Mui has actually sent
+
+321
+00:13:43,330 --> 00:13:44,890
+the notification, Penguins.
+
+322
+00:13:44,890 --> 00:13:47,480
+And then if I touch on that,
+it's going to launch the app.
+
+323
+00:13:47,480 --> 00:13:50,370
+And this is the familiar &quot;Hello
+World&quot; app from Android Studio.
+
+324
+00:13:50,370 --> 00:13:53,080
+I wrote no code to
+be able to get that.
+
+325
+00:13:53,080 --> 00:13:55,270
+And that's pretty cool, right?
+
+326
+00:13:55,270 --> 00:13:58,770
+[APPLAUSE]
+
+327
+00:13:58,770 --> 00:13:59,829
+
+
+328
+00:13:59,830 --> 00:14:02,670
+I've never had so many applause
+for doing nothing before.
+
+329
+00:14:02,670 --> 00:14:04,857
+This is great.
+
+330
+00:14:04,857 --> 00:14:06,689
+So can we switch back
+to the slides, please?
+
+331
+00:14:06,690 --> 00:14:09,500
+
+
+332
+00:14:09,500 --> 00:14:11,257
+So that was background
+notifications.
+
+333
+00:14:11,257 --> 00:14:12,839
+And then people say,
+OK, that's great.
+
+334
+00:14:12,840 --> 00:14:14,660
+But what about when the
+app is in the foreground?
+
+335
+00:14:14,660 --> 00:14:16,600
+What about if I want to
+be able to do things,
+
+336
+00:14:16,600 --> 00:14:18,099
+and I want to receive
+a notification
+
+337
+00:14:18,099 --> 00:14:20,500
+and have it maybe change
+an activity in my app
+
+338
+00:14:20,500 --> 00:14:22,180
+while the app is
+in the foreground?
+
+339
+00:14:22,180 --> 00:14:23,849
+The classic example
+of this is if you're
+
+340
+00:14:23,850 --> 00:14:26,470
+using some kind of
+IP telephony app,
+
+341
+00:14:26,470 --> 00:14:28,090
+and then you receive
+an incoming call.
+
+342
+00:14:28,090 --> 00:14:29,620
+It's going to
+change your activity
+
+343
+00:14:29,620 --> 00:14:31,330
+to be able to handle
+the incoming call.
+
+344
+00:14:31,330 --> 00:14:32,540
+In most cases, you
+want to answer.
+
+345
+00:14:32,540 --> 00:14:33,949
+In some cases, you
+want to ignore.
+
+346
+00:14:33,950 --> 00:14:35,408
+And you've got all
+that kind of UI.
+
+347
+00:14:35,408 --> 00:14:37,380
+So you're changing
+the context of the app
+
+348
+00:14:37,380 --> 00:14:38,720
+upon receiving a notification
+
+349
+00:14:38,720 --> 00:14:38,886
+
+
+350
+00:14:38,886 --> 00:14:40,760
+So let's take a look at
+how we would actually
+
+351
+00:14:40,760 --> 00:14:41,939
+do this in this case.
+
+352
+00:14:41,940 --> 00:14:43,746
+And I'm still a
+very lazy developer,
+
+353
+00:14:43,746 --> 00:14:46,370
+so it's not a whole lot of work,
+but it's a little bit of work,
+
+354
+00:14:46,370 --> 00:14:47,590
+and it's a little bit more.
+
+355
+00:14:47,590 --> 00:14:50,180
+So in Android, here's
+all I have to do.
+
+356
+00:14:50,180 --> 00:14:52,170
+OK, I'm going to
+create a service class.
+
+357
+00:14:52,170 --> 00:14:54,546
+In this case, I call it my
+Firebase Messaging Service.
+
+358
+00:14:54,547 --> 00:14:56,630
+Because like I said, I'm
+a really lazy programmer,
+
+359
+00:14:56,630 --> 00:14:59,050
+and I have no imagination
+about what to call the thing.
+
+360
+00:14:59,050 --> 00:15:01,050
+And I specify an
+intent filter on that
+
+361
+00:15:01,050 --> 00:15:03,233
+so that it will handle
+particular actions,
+
+362
+00:15:03,234 --> 00:15:05,650
+so that this class is the one
+that will handle the action.
+
+363
+00:15:05,650 --> 00:15:07,150
+And the action that
+I want to handle
+
+364
+00:15:07,150 --> 00:15:09,660
+is com.google.firebase.MESSAGING
+EVENT.
+
+365
+00:15:09,660 --> 00:15:12,170
+So what I'm saying is that
+once I compile my application,
+
+366
+00:15:12,170 --> 00:15:14,050
+and I have that
+service class in there,
+
+367
+00:15:14,050 --> 00:15:15,959
+if this application is
+running on the device,
+
+368
+00:15:15,960 --> 00:15:17,900
+whenever an incoming
+message comes,
+
+369
+00:15:17,900 --> 00:15:19,870
+an incoming
+notification comes, then
+
+370
+00:15:19,870 --> 00:15:22,199
+this class, the Firebase
+Messaging Service Class,
+
+371
+00:15:22,199 --> 00:15:23,740
+is the one that's
+going to handle it.
+
+372
+00:15:23,740 --> 00:15:26,230
+And this class would look
+a little bit like this.
+
+373
+00:15:26,230 --> 00:15:29,040
+So it's just straightforward
+Java code here.
+
+374
+00:15:29,040 --> 00:15:31,660
+This is my lazy
+MyFirebaseMessagingService.
+
+375
+00:15:31,660 --> 00:15:36,449
+And I'm going to extend the
+base Firebase Messaging Service
+
+376
+00:15:36,450 --> 00:15:37,820
+class for that.
+
+377
+00:15:37,820 --> 00:15:41,040
+And then whenever I receive a
+message, once I'm extending,
+
+378
+00:15:41,040 --> 00:15:44,110
+then I just receive
+this onMessageReceived,
+
+379
+00:15:44,110 --> 00:15:46,147
+and it's going to
+contain a remote message.
+
+380
+00:15:46,147 --> 00:15:47,730
+And then there's a
+bunch of attributes
+
+381
+00:15:47,730 --> 00:15:51,250
+of that remote message that
+I can do something with.
+
+382
+00:15:51,250 --> 00:15:53,180
+I put together a
+screencast of this that
+
+383
+00:15:53,180 --> 00:15:54,531
+went on YouTube last night.
+
+384
+00:15:54,531 --> 00:15:57,030
+And one question that somebody
+asked me was, well, how would
+
+385
+00:15:57,030 --> 00:15:58,829
+I generate a custom
+notification?
+
+386
+00:15:58,830 --> 00:16:02,170
+So take, for example,
+Android M and Android N.
+
+387
+00:16:02,170 --> 00:16:04,670
+We have the ability to
+have a custom notification,
+
+388
+00:16:04,670 --> 00:16:06,829
+and you can reply, or you
+can do something directly
+
+389
+00:16:06,830 --> 00:16:07,810
+in the notification.
+
+390
+00:16:07,810 --> 00:16:09,191
+Here's where you would do that.
+
+391
+00:16:09,192 --> 00:16:10,650
+You're receiving
+the remote message
+
+392
+00:16:10,650 --> 00:16:13,257
+N. You can parse metadata
+out of that remote message.
+
+393
+00:16:13,257 --> 00:16:15,089
+And then you can generate
+a new notification
+
+394
+00:16:15,090 --> 00:16:17,420
+that you would then render
+in Android with that custom
+
+395
+00:16:17,420 --> 00:16:18,910
+stuff on there.
+
+396
+00:16:18,910 --> 00:16:21,770
+Also, if you have an Android
+Wear watch connected to it,
+
+397
+00:16:21,770 --> 00:16:23,441
+you can send the
+notifications there.
+
+398
+00:16:23,441 --> 00:16:25,940
+So there's lots of really fun
+and lots of really great stuff
+
+399
+00:16:25,940 --> 00:16:26,770
+that you can do.
+
+400
+00:16:26,770 --> 00:16:28,730
+And this is really all
+the code that you have
+
+401
+00:16:28,730 --> 00:16:30,220
+to do to be able to do that.
+
+402
+00:16:30,220 --> 00:16:31,770
+It's you create the service.
+
+403
+00:16:31,770 --> 00:16:33,480
+You create the intent filter.
+
+404
+00:16:33,480 --> 00:16:36,240
+Your service has to extend
+Firebase Messaging Service.
+
+405
+00:16:36,240 --> 00:16:38,640
+And then you handle your stuff
+in the onMessageReceived.
+
+406
+00:16:38,640 --> 00:16:40,996
+Pretty straightforward,
+pretty easy, right?
+
+407
+00:16:40,996 --> 00:16:42,620
+And then people go,
+but what about iOS?
+
+408
+00:16:42,620 --> 00:16:43,570
+I say, OK, iOS.
+
+409
+00:16:43,570 --> 00:16:46,170
+Now, forgive me,
+my slides, I tend
+
+410
+00:16:46,170 --> 00:16:48,660
+to use Objective-C. I haven't
+become a fan of Taylor Swift
+
+411
+00:16:48,660 --> 00:16:49,160
+yet.
+
+412
+00:16:49,160 --> 00:16:49,850
+So--
+
+413
+00:16:49,850 --> 00:16:50,804
+[LAUGHTER]
+
+414
+00:16:50,804 --> 00:16:52,220
+--people are
+laughing at my jokes.
+
+415
+00:16:52,220 --> 00:16:53,317
+This is great.
+
+416
+00:16:53,317 --> 00:16:57,440
+So my last session,
+nobody laughed.
+
+417
+00:16:57,440 --> 00:16:59,680
+So when you're writing
+an iOS application,
+
+418
+00:16:59,680 --> 00:17:01,630
+you just have your
+application have
+
+419
+00:17:01,630 --> 00:17:04,700
+a didReceiveRemoteNotification
+handler on that.
+
+420
+00:17:04,700 --> 00:17:06,567
+That's the second
+line of code here.
+
+421
+00:17:06,567 --> 00:17:08,400
+And that's going to
+receive an NSDictionary.
+
+422
+00:17:08,400 --> 00:17:10,680
+And if you're in Objective-C
+or an iOS programmer,
+
+423
+00:17:10,680 --> 00:17:12,221
+you're familiar with
+an NSDictionary.
+
+424
+00:17:12,221 --> 00:17:13,888
+It's just a set of
+name value pairs.
+
+425
+00:17:13,888 --> 00:17:16,179
+So there's going to be a set
+of name value pairs, keys,
+
+426
+00:17:16,180 --> 00:17:17,849
+and the value for that.
+
+427
+00:17:17,848 --> 00:17:19,785
+So as you can see here,
+the userinfo bracket
+
+428
+00:17:19,786 --> 00:17:21,619
+key that I'm doing
+there, that would be just
+
+429
+00:17:21,618 --> 00:17:22,540
+where I read out the keys.
+
+430
+00:17:22,540 --> 00:17:24,705
+Like maybe it's the Message
+ID, or the Message Body,
+
+431
+00:17:24,705 --> 00:17:25,780
+or something like that.
+
+432
+00:17:25,780 --> 00:17:28,670
+And then I could do something
+interesting with that in iOS.
+
+433
+00:17:28,670 --> 00:17:30,040
+So shall we see this in action?
+
+434
+00:17:30,040 --> 00:17:30,790
+What do you think?
+
+435
+00:17:30,790 --> 00:17:31,280
+TING MUI LI: Why not?
+
+436
+00:17:31,280 --> 00:17:32,220
+LAURENCE MORONEY: OK.
+
+437
+00:17:32,220 --> 00:17:34,600
+So can we switch to
+the laptop, please?
+
+438
+00:17:34,600 --> 00:17:38,169
+Actually, switch back to
+the phone first, please.
+
+439
+00:17:38,170 --> 00:17:41,360
+And I have my application here
+running in the foreground,
+
+440
+00:17:41,360 --> 00:17:43,580
+and it's the same File,
+New, &quot;Hello World&quot;
+
+441
+00:17:43,580 --> 00:17:46,319
+application from Android
+Studio, except I added a service
+
+442
+00:17:46,319 --> 00:17:48,110
+class to that with all
+the code that I just
+
+443
+00:17:48,110 --> 00:17:50,260
+showed you on the slide,
+and I'm running it.
+
+444
+00:17:50,260 --> 00:17:52,650
+And now, can we switch
+to the laptop, please?
+
+445
+00:17:52,650 --> 00:17:54,980
+And Ting Mui will
+send a notification.
+
+446
+00:17:54,980 --> 00:17:56,500
+What kind of thing
+should we send?
+
+447
+00:17:56,500 --> 00:17:57,450
+What do you think?
+
+448
+00:17:57,450 --> 00:17:59,020
+Something other than Penguins,
+because I don't really
+
+449
+00:17:59,020 --> 00:17:59,680
+like the Penguins.
+
+450
+00:17:59,680 --> 00:18:00,120
+TING MUI LI: Oh.
+
+451
+00:18:00,120 --> 00:18:01,820
+LAURENCE MORONEY: Well, Sidney
+Crosby's good, but I don't--
+
+452
+00:18:01,820 --> 00:18:02,620
+TING MUI LI: Turtles?
+
+453
+00:18:02,620 --> 00:18:03,703
+LAURENCE MORONEY: Turtles.
+
+454
+00:18:03,703 --> 00:18:06,230
+There's no hockey team called
+the Turtles, but that's OK.
+
+455
+00:18:06,230 --> 00:18:07,060
+Name a hockey team.
+
+456
+00:18:07,060 --> 00:18:07,726
+AUDIENCE: Sharks
+
+457
+00:18:07,726 --> 00:18:11,170
+LAURENCE MORONEY:
+Sharks, thank you.
+
+458
+00:18:11,170 --> 00:18:13,750
+A former Seattle star plays for
+the Sharks, Patrick Marleau,
+
+459
+00:18:13,750 --> 00:18:14,770
+so I'm a big Sharks fan.
+
+460
+00:18:14,770 --> 00:18:15,603
+TING MUI LI: Sharks?
+
+461
+00:18:15,603 --> 00:18:16,850
+LAURENCE MORONEY: Sharks.
+
+462
+00:18:16,850 --> 00:18:18,805
+They're going to
+win tonight, right?
+
+463
+00:18:18,806 --> 00:18:20,010
+TING MUI LI: We'll see.
+
+464
+00:18:20,010 --> 00:18:22,806
+LAURENCE MORONEY: So
+as Ting Mui sends that,
+
+465
+00:18:22,806 --> 00:18:24,430
+can we now switch to
+the phone, please?
+
+466
+00:18:24,430 --> 00:18:27,030
+
+
+467
+00:18:27,030 --> 00:18:29,240
+And we should see an
+incoming notification
+
+468
+00:18:29,240 --> 00:18:31,041
+is going to change my activity.
+
+469
+00:18:31,041 --> 00:18:31,916
+Drum roll, everybody.
+
+470
+00:18:31,916 --> 00:18:34,600
+
+
+471
+00:18:34,600 --> 00:18:35,573
+[DRUM ROLL]
+
+472
+00:18:35,574 --> 00:18:36,740
+Thank you for the drum roll.
+
+473
+00:18:36,740 --> 00:18:38,000
+There it is.
+
+474
+00:18:38,000 --> 00:18:40,080
+And we see this activity
+now that comes in.
+
+475
+00:18:40,080 --> 00:18:42,939
+And this was launched in
+response to the notification.
+
+476
+00:18:42,940 --> 00:18:44,795
+So in that slide,
+where I showed you
+
+477
+00:18:44,795 --> 00:18:46,670
+earlier on that I've
+received a notification,
+
+478
+00:18:46,670 --> 00:18:49,090
+and I received data, I
+have another activity
+
+479
+00:18:49,090 --> 00:18:51,959
+that I just launched, stuck
+that data in a bundle,
+
+480
+00:18:51,960 --> 00:18:53,390
+so it was the From and the text.
+
+481
+00:18:53,390 --> 00:18:55,520
+And then in this activity,
+I ran to the text.
+
+482
+00:18:55,520 --> 00:18:57,650
+It was really, really
+as simple as that.
+
+483
+00:18:57,650 --> 00:19:00,110
+We're probably talking
+15 lines of code, total,
+
+484
+00:19:00,110 --> 00:19:01,560
+to do the whole thing.
+
+485
+00:19:01,560 --> 00:19:04,200
+And this is me receiving
+custom notifications
+
+486
+00:19:04,200 --> 00:19:06,240
+from Firebase Notifications
+and actually doing
+
+487
+00:19:06,240 --> 00:19:08,070
+something active with that.
+
+488
+00:19:08,070 --> 00:19:09,570
+How easy is that?
+
+489
+00:19:09,570 --> 00:19:12,550
+What are we going
+to do next year?
+
+490
+00:19:12,550 --> 00:19:14,889
+So with that, so
+Ting Mui, I would
+
+491
+00:19:14,890 --> 00:19:16,294
+like to pass it back to you.
+
+492
+00:19:16,294 --> 00:19:18,460
+And we're going to talk
+about some customers, right?
+
+493
+00:19:18,460 --> 00:19:20,370
+TING MUI LI: Yep.
+
+494
+00:19:20,370 --> 00:19:22,469
+Can you go back to the
+presentation, please?
+
+495
+00:19:22,470 --> 00:19:23,900
+And thank you, Laurence.
+
+496
+00:19:23,900 --> 00:19:26,543
+LAURENCE MORONEY: Thank you.
+
+497
+00:19:26,543 --> 00:19:29,489
+[APPLAUSE]
+
+498
+00:19:29,490 --> 00:19:31,960
+
+
+499
+00:19:31,960 --> 00:19:34,180
+I get applause because
+I got the T-shirts.
+
+500
+00:19:34,180 --> 00:19:35,890
+TING MUI LI:
+--shirts to send out.
+
+501
+00:19:35,890 --> 00:19:42,980
+All right, so I hope you guys
+enjoy the T-shirts, as well as
+
+502
+00:19:42,980 --> 00:19:44,770
+the demos that we've
+just shown you.
+
+503
+00:19:44,770 --> 00:19:46,320
+We definitely like it.
+
+504
+00:19:46,320 --> 00:19:48,220
+So we have to show
+you how easy it
+
+505
+00:19:48,220 --> 00:19:50,880
+is to be able to send a
+notification without using
+
+506
+00:19:50,880 --> 00:19:54,310
+the console, and also how simple
+it is to actually integrate
+
+507
+00:19:54,310 --> 00:19:56,360
+on the client side.
+
+508
+00:19:56,360 --> 00:19:58,590
+We don't want to develop
+a product in a vacuum.
+
+509
+00:19:58,590 --> 00:20:01,280
+So we have been gathering a
+lot of developers' feedback.
+
+510
+00:20:01,280 --> 00:20:03,850
+And there are many
+developers who
+
+511
+00:20:03,850 --> 00:20:07,540
+actually integrated with
+Firebase Notifications already.
+
+512
+00:20:07,540 --> 00:20:10,899
+Today I would like to share the
+experiences from three of them.
+
+513
+00:20:10,900 --> 00:20:14,020
+And for the rest, please go
+to other Firebase session
+
+514
+00:20:14,020 --> 00:20:17,200
+and hear about
+their experiences.
+
+515
+00:20:17,200 --> 00:20:21,970
+So first, App in the Air--
+someone is taking a picture.
+
+516
+00:20:21,970 --> 00:20:25,470
+So App in the Air helps the
+user to manage their travel
+
+517
+00:20:25,470 --> 00:20:27,440
+experience after
+they have already
+
+518
+00:20:27,440 --> 00:20:28,802
+booked their flight ticket.
+
+519
+00:20:28,802 --> 00:20:30,760
+So they would get a flight
+status change alert,
+
+520
+00:20:30,760 --> 00:20:32,390
+for example.
+
+521
+00:20:32,390 --> 00:20:34,690
+And what they found is
+Firebase Notifications
+
+522
+00:20:34,690 --> 00:20:37,450
+is &quot;reliable and flexible.&quot;
+
+523
+00:20:37,450 --> 00:20:40,330
+And they were able
+also to really allow
+
+524
+00:20:40,330 --> 00:20:45,210
+them to focus on the important
+metrics of their app.
+
+525
+00:20:45,210 --> 00:20:50,260
+Busbud, an application that
+helps you to book a bus ticket.
+
+526
+00:20:50,260 --> 00:20:54,090
+They will send you new route
+information or a discount code.
+
+527
+00:20:54,090 --> 00:20:57,169
+And they were able to
+integrate Firebase Analytics
+
+528
+00:20:57,170 --> 00:21:00,830
+really quickly, whilst you are
+able to customize to their user
+
+529
+00:21:00,830 --> 00:21:03,629
+experiences.
+
+530
+00:21:03,630 --> 00:21:08,290
+Malang Studio is able to
+use Firebase Notifications
+
+531
+00:21:08,290 --> 00:21:11,755
+in their latest application,
+Chu Day, an application that
+
+532
+00:21:11,756 --> 00:21:13,380
+helps users to
+celebrate anniversaries.
+
+533
+00:21:13,380 --> 00:21:15,890
+
+
+534
+00:21:15,890 --> 00:21:17,540
+They have users
+around the world.
+
+535
+00:21:17,540 --> 00:21:20,030
+And they are able to use a
+time zone feature, so that they
+
+536
+00:21:20,030 --> 00:21:22,870
+don't have to worry about
+sending notifications
+
+537
+00:21:22,870 --> 00:21:25,469
+after midnight and
+disrupt their users.
+
+538
+00:21:25,470 --> 00:21:29,000
+So these are some really
+interesting real-life examples
+
+539
+00:21:29,000 --> 00:21:34,475
+and testimonies on how flexible,
+simple, and reliable Firebase
+
+540
+00:21:34,475 --> 00:21:35,414
+Notifications is.
+
+541
+00:21:35,414 --> 00:21:38,430
+
+
+542
+00:21:38,430 --> 00:21:40,190
+So we have covered a lot today.
+
+543
+00:21:40,190 --> 00:21:42,380
+We talked about why
+we think notifications
+
+544
+00:21:42,380 --> 00:21:46,060
+is important in engaging users,
+what we've built to have you
+
+545
+00:21:46,060 --> 00:21:48,210
+to better engage your users.
+
+546
+00:21:48,210 --> 00:21:50,162
+And also, we showed
+you some demos
+
+547
+00:21:50,162 --> 00:21:51,370
+and also partner's feedbacks.
+
+548
+00:21:51,370 --> 00:21:54,510
+
+
+549
+00:21:54,510 --> 00:21:58,110
+In summary, there are
+three key takeaways.
+
+550
+00:21:58,110 --> 00:22:01,689
+We built Firebase
+Notifications so that anyone
+
+551
+00:22:01,690 --> 00:22:03,720
+can send notifications
+without having to write
+
+552
+00:22:03,720 --> 00:22:05,680
+a single line of server code.
+
+553
+00:22:05,680 --> 00:22:09,140
+And we made the client
+integration super simple
+
+554
+00:22:09,140 --> 00:22:14,050
+as well, so that you can focus
+on getting the right user
+
+555
+00:22:14,050 --> 00:22:16,260
+with the right contacts.
+
+556
+00:22:16,260 --> 00:22:18,710
+And with a tight
+integration with Analytics,
+
+557
+00:22:18,710 --> 00:22:20,790
+you'll be able to
+measure the effectiveness
+
+558
+00:22:20,790 --> 00:22:23,270
+of your notifications.
+
+559
+00:22:23,270 --> 00:22:26,730
+We're really excited to announce
+our Firebase Notifications is
+
+560
+00:22:26,730 --> 00:22:29,660
+available to you today.
+
+561
+00:22:29,660 --> 00:22:32,830
+So for those who are
+interested to learn more,
+
+562
+00:22:32,830 --> 00:22:35,476
+please go to
+firebase.google.com.
+
+563
+00:22:35,476 --> 00:22:39,720
+Check out our Documentation
+and Support page.
+
+564
+00:22:39,720 --> 00:22:41,650
+We really look forward
+for your feedback,
+
+565
+00:22:41,650 --> 00:22:44,520
+because we want to develop a
+product that really helps you
+
+566
+00:22:44,520 --> 00:22:47,180
+to better engage your users.
+
+567
+00:22:47,180 --> 00:22:50,550
+So thank you so much for
+coming to this session.
+
+568
+00:22:50,550 --> 00:22:53,899
+[MUSIC PLAYING]
+
+569
+00:22:53,900 --> 00:23:04,349
+
+
